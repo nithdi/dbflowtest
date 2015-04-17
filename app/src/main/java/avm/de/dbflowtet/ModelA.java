@@ -20,7 +20,7 @@ public class ModelA extends BaseModel {
     @Column
     String name;
 
-    @Column(name = "my_model_b", columnType = Column.FOREIGN_KEY,
+    @Column(columnType = Column.FOREIGN_KEY,
             references = {@ForeignKeyReference(columnName = "modelB", foreignColumnName = "id", columnType = Integer.class)},
             saveForeignKeyModel = true)
     ModelB modelB;
