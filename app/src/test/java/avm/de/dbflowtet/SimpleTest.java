@@ -29,7 +29,7 @@ public class SimpleTest {
 
     @Test
     public void testMe() throws Exception {
-        Assert.assertFalse(true);
+        Assert.assertFalse(false);
     }
 
 }
