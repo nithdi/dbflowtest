@@ -17,4 +17,19 @@ public class SimpleTest {
         Assert.assertFalse(false);
     }
 
+    @Test
+    public void testElse() throws Exception {
+        Assert.assertFalse(false);
+    }
+
+    @Test
+    public void testSomethingElse() throws Exception {
+        Assert.assertFalse(false);
+    }
+
+    @Test
+    public void testMe() throws Exception {
+        Assert.assertFalse(true);
+    }
+
 }
