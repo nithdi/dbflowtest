@@ -27,5 +27,14 @@ dependencies {
     apt 'com.raizlabs.android:DBFlow-Compiler:1.7.2'
 
     compile "com.raizlabs.android:DBFlow-Core:1.7.2"
-    compile "com.raizlabs.android:DBFlow:1.7.1"
+    compile "com.raizlabs.android:DBFlow:1.7.2"
+
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+
+    testCompile 'junit:junit:4.12'
+    testCompile('org.robolectric:robolectric:3.0-rc3') {
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
 }
